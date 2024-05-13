@@ -1,7 +1,6 @@
 package com.sparta.myselectshop.scheduler;
 
 import com.sparta.myselectshop.entity.Product;
-import com.sparta.myselectshop.naver.controller.NaverApiController;
 import com.sparta.myselectshop.naver.dto.ItemDto;
 import com.sparta.myselectshop.naver.service.NaverApiService;
 import com.sparta.myselectshop.repository.ProductRepository;
@@ -36,7 +35,7 @@ public class Scheduler {
             String title = product.getTitle();
             List<ItemDto> itemDtoList = naverApiService.searchItems(title);
 
-            if(itemDtoList.size() > 0)  {
+            if (itemDtoList.size() > 0) {
                 ItemDto itemDto = itemDtoList.get(0);
                 // i 번째 관심 상품 정보를 업데이트합니다.
                 Long id = product.getId();
