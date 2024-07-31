@@ -19,7 +19,6 @@ public class FolderController {
 
     private final FolderService folderService;
 
-
     @PostMapping("/folders")
     public void addFolders(@RequestBody FolderRequestDto folderRequestDto,
                            @AuthenticationPrincipal UserDetailsImpl userDetails) {

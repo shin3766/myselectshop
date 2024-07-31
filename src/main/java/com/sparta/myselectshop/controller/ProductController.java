@@ -68,7 +68,7 @@ public class ProductController {
             @RequestParam boolean isAsc,
             @AuthenticationPrincipal UserDetailsImpl userDetails
     ) {
-        return productService.getProductsInFolter(
+        return productService.getProductsInFolder(
                 folderId,
                 page - 1,
                 size,
