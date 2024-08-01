@@ -16,7 +16,7 @@ public class ProductResponseDto {
     private String link;
     private String image;
     private int lprice;
-    private int mypriice;
+    private int myprice;
     private List<FolderResponseDto> productFolderList = new ArrayList<>();
 
     public ProductResponseDto(Product product) {
@@ -25,7 +25,7 @@ public class ProductResponseDto {
         this.link = product.getLink();
         this.image = product.getImage();
         this.lprice = product.getLprice();
-        this.mypriice = product.getMyprice();
+        this.myprice = product.getMyprice();
         for (ProductFolder productFolder : product.getProductFolderList()) {
             productFolderList.add(new FolderResponseDto(productFolder.getFolder()));
         }

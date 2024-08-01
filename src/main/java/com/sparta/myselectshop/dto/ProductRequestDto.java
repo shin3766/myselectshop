@@ -11,6 +11,5 @@ public class ProductRequestDto {
     private String title;
     private String imagee;
     private String link;
-    private int lprice;
     private int myprice;
 }
