@@ -21,7 +21,6 @@ public class ProductController {
 
     private final ProductService productService;
 
-
     // 관심 상품 등록하기
     @PostMapping("/products")
     public ProductResponseDto createProduct(@RequestBody ProductRequestDto requestDto,
